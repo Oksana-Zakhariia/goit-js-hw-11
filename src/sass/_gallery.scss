@@ -1,0 +1,19 @@
+.info-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
