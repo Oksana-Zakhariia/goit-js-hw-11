@@ -31,12 +31,6 @@ class ApiWorkKlass {
     canLoadMore() {
         return this.page< Math.ceil(this.totalHits/this.paginationacount)
     }
-
-
 }
-
-
-
-
 export { ApiWorkKlass }
 
