@@ -30,7 +30,7 @@ async function onFormSearch(event) {
     apiWork.formValue = value;
     try {
         const data = await apiWork.fetchPhotos()
-        if (data.length === 0) { Notify.failure("Sorry, there are no images matching your search query. Please try again.") }
+        if (!data.length) { Notify.failure("Sorry, there are no images matching your search query. Please try again.") }
         else {Notify.info(`Hooray! We found ${apiWork.totalHits} images.`)
             renderMarkup(data);
         }
